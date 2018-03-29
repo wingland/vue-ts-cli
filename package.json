@@ -1,0 +1,30 @@
+{
+  "name": "vue-ts-cli",
+  "version": "1.0.2",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "engineStrict": true,
+  "description": "Command line tool to generate vue components with typescript",
+  "main": "./bin/vt.js",
+  "bin": {
+    "vt": "./bin/vt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wingland/vue-ts-cli"
+  },
+  "keywords": [
+    "cli",
+    "vue",
+    "typescript"
+  ],
+  "homepage": "https://github.com/wingland/vue-ts-cli",
+  "author": "wingland",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "lodash": "^4.17.5",
+    "mkdirp": "^0.5.1"
+  }
+}
