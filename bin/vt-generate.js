@@ -32,15 +32,13 @@ program
     console.log();
   })
   .action(function (componentName, options) {
-    console.log(options.tsx);
-    console.log(options.style);
     let componentRelativePath = './';
     let componentActualName = componentName;
     if (componentName.indexOf('/') > -1) {
       componentRelativePath = componentName.substring(0, componentName.lastIndexOf('/'));
       componentActualName = componentName.substring(componentName.lastIndexOf('/') + 1);
     }
-    console.log(`vt will generate a component called ${componentActualName}` );
+    console.log(`vt will generate a component called ${componentActualName}.` );
     const fileDir = targetFileDir(componentRelativePath, componentActualName, options.src);
     const { vueFile, tsFile } = generateComponentFiles(componentActualName, fileDir, options.tsx, options.style);
     if (vueFile && tsFile) {

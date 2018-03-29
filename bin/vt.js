@@ -3,7 +3,7 @@
 const program = require('commander');
 
 program
-  .version('1.0.2', '-v, --version')
+  .version('1.0.3', '-v, --version')
   .usage('<command>')
   // .on('--help', function() {
   //   console.log();
